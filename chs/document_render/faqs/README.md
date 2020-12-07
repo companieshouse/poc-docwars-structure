@@ -24,3 +24,7 @@ This can happen when the Assets Registry service is still initialising while the
 1. Restart the Assets Registry service
 2. Wait for it to finish initialising
 3. Restart the HTML5 service
+
+## Navigation
+
+- [back](../)

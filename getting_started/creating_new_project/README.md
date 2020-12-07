@@ -8,3 +8,7 @@ A checklist of things a new project must consider i.e.
 4. Dependabot
 5. Expected documentation
 6. etc etc
+
+## Navigation
+
+- [back](../)

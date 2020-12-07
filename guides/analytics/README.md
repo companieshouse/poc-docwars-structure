@@ -11,3 +11,8 @@ URLs for the consoles
 What features do these provide for CH?
 
 Why should we care?
+
+## Navigation
+
+- [back](../)
+- [Integration Guide](integration_guide/)

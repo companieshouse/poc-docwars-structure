@@ -25,3 +25,11 @@ The Document Render platform consists of the following GitHub repositories:
 - [x] Swagger
 - [x] Integration guide
 - [x] FAQs
+
+## Navigation
+
+- [back](../)
+- [design](design/)
+- [integration guide](integration_guide/)
+- [swagger](swagger/)
+- [FAQs](faqs/)
