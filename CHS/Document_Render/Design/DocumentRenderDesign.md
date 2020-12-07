@@ -3,10 +3,10 @@
 Here you can find some diagrams to help you visualise the Document Render platform.
 
 ## High Level Design
-![High Level Design](CHS/Document_Render/assets/Design/docRenderHighLevelDesign.png)
+![High Level Design](assets/chs/document_render/design/docRenderHighLevelDesign.png)
 
 ## Sequence Diagram 
-![Sequence Diagram](CHS/Document_Render/assets/Design/docRenderSequenceDiagram.png)
+![Sequence Diagram](assets/chs/document_render/design/docRenderSequenceDiagram.png)
 
 The sequence of events depends on 2 things:
 
@@ -21,6 +21,6 @@ The above sequence diagram shows 3 potential exit points:
 
 ## Additional links
 
-[Draw.io source](CHS/Document_Render/assets/Design/DocumentRender.drawio)
+[Draw.io source](assets/chs/document_render/design/docRender.drawio)
 
 
