@@ -28,8 +28,8 @@ The Document Render platform consists of the following GitHub repositories:
 
 ## Navigation
 
-- [back](../)
-- [design](design/)
-- [integration guide](integration_guide/)
-- [swagger](swagger/)
-- [FAQs](faqs/)
+- [back](../README.md)
+- [design](design/README.md)
+- [integration guide](integration_guide/README.md)
+- [swagger](swagger/README.md)
+- [FAQs](faqs/README.md)

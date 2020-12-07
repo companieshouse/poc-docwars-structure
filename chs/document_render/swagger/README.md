@@ -10,4 +10,4 @@ View the swagger in browser using https://editor.swagger.io/
 
 ## Navigation
 
-- [back](../)
+- [back](../README.md)

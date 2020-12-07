@@ -4,6 +4,6 @@
 
 ## Navigation
 
-- [back](../)
-- [onboarding](onboarding/)
-- [creating new project](creating_new_project/)
+- [back](../README.md)
+- [onboarding](onboarding/README.md)
+- [creating new project](creating_new_project/README.md)

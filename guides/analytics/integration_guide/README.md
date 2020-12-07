@@ -6,4 +6,4 @@ How to add custom behaviour
 
 ## Navigation
 
-- [back](../)
+- [back](../README.md)

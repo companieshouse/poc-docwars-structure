@@ -27,4 +27,4 @@ This can happen when the Assets Registry service is still initialising while the
 
 ## Navigation
 
-- [back](../)
+- [back](../README.md)

@@ -2,5 +2,5 @@
 
 ## Navigation
 
-- [back](../)
-- [setup](setup/)
+- [back](../README.md)
+- [setup](setup/README.md)

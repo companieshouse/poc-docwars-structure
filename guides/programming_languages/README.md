@@ -4,5 +4,5 @@ This section outlines the different technologies and recommendations for each te
 
 ## Navigation
 
-- [back](../)
-- [Java](java/)
+- [back](../README.md)
+- [Java](java/README.md)

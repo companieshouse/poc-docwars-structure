@@ -2,6 +2,6 @@
 
 ## Navigation
 
-- [back](../)
-- [gitflow](gitflow/)
-- [Trunk Based Development](trunk_based_development/)
+- [back](../README.md)
+- [gitflow](gitflow/README.md)
+- [Trunk Based Development](trunk_based_development/README.md)

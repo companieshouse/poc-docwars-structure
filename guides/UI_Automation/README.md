@@ -10,4 +10,4 @@ How to run a test?
 
 ## Navigation
 
-- [back](../)
+- [back](../README.md)

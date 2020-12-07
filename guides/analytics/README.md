@@ -14,5 +14,5 @@ Why should we care?
 
 ## Navigation
 
-- [back](../)
-- [Integration Guide](integration_guide/)
+- [back](../README.md)
+- [Integration Guide](integration_guide/README.md)

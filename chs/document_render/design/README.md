@@ -25,5 +25,5 @@ The above sequence diagram shows 3 potential exit points:
 
 ## Navigation
 
-- [back](../)
+- [back](../README.md)
 

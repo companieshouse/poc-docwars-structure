@@ -4,10 +4,10 @@ A proof of concept for centralized Companies House technical documentation creat
 
 ## Navigation
 
-- [chips](chips/)
-- [chs](chs/)
-- [getting started](getting_started/)
-- [guides](guides/) 
+- [chips](chips/README.md)
+- [chs](chs/README.md)
+- [getting started](getting_started/README.md)
+- [guides](guides/README.md) 
 
 ## More information
 
@@ -25,13 +25,3 @@ A proof of concept for centralized Companies House technical documentation creat
 ### Aditional notes
 1. Gone through the effort of copying confluence styling as close as I can. 
 2. does a tool for exporting confluence pages to MD exist?
-
-## Navigation
-
-- [back](../)
-- [Accessiblity](accessiblity/)
-- [Analytics](analytics/)
-- [GIT](git/)
-- [Programming Languages](programming_languages/)
-- [API Automation](api_automation/)
-- [UI Automation](UI_Automation/)

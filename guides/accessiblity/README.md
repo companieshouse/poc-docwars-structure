@@ -14,4 +14,4 @@ How to run tests
 
 ## Navigation
 
-- [back](../)
+- [back](../README.md)

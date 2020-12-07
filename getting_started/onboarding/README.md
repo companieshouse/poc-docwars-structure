@@ -8,4 +8,4 @@ Common installations.
 
 ## Navigation
 
-- [back](../)
+- [back](../README.md)
