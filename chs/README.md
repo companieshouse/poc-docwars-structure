@@ -1,6 +1,6 @@
 # CHS
 
-> [Document Render has been added to this proof of concept, follow the link](document_render/README.md)
+> [Document Render has been added to this proof of concept, follow the link](document_render/)
 
 This is the CHS homepage.  Here we can give an overview of CHS, including the overall CHS microservice diagram (when available) 
 
