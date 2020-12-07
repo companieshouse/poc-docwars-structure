@@ -14,7 +14,7 @@ Is it worth adding a checklist of minimum documentation that your service should
 
 ## Navigation
 
-- [back](../)
-- [document_render](document_render/)
+- [back](../README.md)
+- [document_render](document_render/README.md)
 
-> Document Render has been added to this proof of concept
+> Document Render is only service to have been added to this proof of concept
