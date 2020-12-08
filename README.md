@@ -4,11 +4,12 @@ A proof of concept for centralized Companies House technical documentation creat
 
 ## How to run
 
-1. Install Ruby with Rubygems
-2. Clone Repository
-3. run `bundle install`
-4. run `bundle exec middleman server`
-5. Browse http://localhost:4567
+1. Install Ruby: https://www.ruby-lang.org/en/documentation/installation/#managers
+2. install bundler https://bundler.io/
+3. Clone Repository
+4. run `bundle install`
+5. run `bundle exec middleman server`
+6. Browse http://localhost:4567
 
 
 ## More information
