@@ -1,27 +1,92 @@
-# poc-docwars-structure
+# Technical Documentation
 
-A proof of concept for centralized Companies House technical documentation created from the docWars meetings
+## Getting started
 
-## Navigation
+To preview or build the website, we need to use the terminal.
 
-- [chips](chips/README.md)
-- [chs](chs/README.md)
-- [getting started](getting_started/README.md)
-- [guides](guides/README.md) 
+Install Ruby with Rubygems, perferably with a [Ruby version manager][rvm],
+and the [Bundler gem][bundler].
 
-## More information
+In the application folder type the following to install the required gems:
 
-*This is internal to companies house*
+```
+bundle install
+```
 
-- Join the `#fix_docs_in_small_steps` slack channel for more information
-- Checkout our [confluence page](https://companieshouse.atlassian.net/wiki/spaces/DEV/pages/1729003595/Fix+our+Docs+Overview)
+## Making changes
 
-## Observations from POC
-### Concerns
-1. Storage of images (takes up space in git repo)
-2. Storage of attachments (such as draw.io information for reproducibility)
-3. No ability to write comments or like (likes arent widelty used in confluence)
+To make changes edit the source files in the `source` folder.
 
-### Aditional notes
-1. Gone through the effort of copying confluence styling as close as I can. 
-2. does a tool for exporting confluence pages to MD exist?
+### Single page output
+
+Although a single page of HTML is generated the markdown is spread across
+multiple files to make it easier to manage. They can be found in
+`source/documentation`.
+
+A new markdown file isn't automatically included in the generated output. If we
+add a new markdown file at the location `source/documentation/agile/scrum.md`,
+the following snippet in `source/index.html.md.erb`, includes it in the
+generated output.
+
+```
+<%= partial 'documentation/agile/scrum' %>
+```
+
+Including files manually like this lets us specify the position they appear in
+the page.
+
+### Multiple pages
+
+To add a completely new page, create a file with a `.html.md` extension in the `/source` directory.
+
+For example, `source/about.html.md` will be accessible on <http://localhost:4567/about.html>.
+
+## Preview
+
+Whilst writing documentation we can run a middleman server to preview how the
+published version will look in the browser. After saving a change the preview in
+the browser will automatically refresh.
+
+The preview is only available on our own computer. Others won't be able to
+access it if they are given the link.
+
+Type the following to start the server:
+
+```
+bundle exec middleman server
+```
+
+If all goes well something like the following output will be displayed:
+
+```
+== The Middleman is loading
+== LiveReload accepting connections from ws://192.168.0.8:35729
+== View your site at "http://Laptop.local:4567", "http://192.168.0.8:4567"
+== Inspect your site configuration at "http://Laptop.local:4567/__middleman", "http://192.168.0.8:4567/__middleman"
+```
+
+You should now be able to view a live preview at http://localhost:4567.
+
+## Build
+
+If you want to publish the website without using a build script you may need to
+build the static HTML files.
+
+Type the following to build the HTML:
+
+```
+bundle exec middleman build
+```
+
+This will create a `build` subfolder in the application folder which contains
+the HTML and asset files ready to be published.
+
+[rvm]: https://www.ruby-lang.org/en/documentation/installation/#managers
+[bundler]: http://bundler.io/
+
+## Publishing
+
+Run:
+```
+bundle exec rake publish
+```

@@ -1,0 +1,32 @@
+---
+title: Design
+last_reviewed_on: 2020-12-8
+review_in: 6 months
+weight: 1
+---
+
+# <%= current_page.data.title %>
+
+Here you can find some diagrams to help you visualise the Document Render platform.
+
+## High Level Design
+![High Level Design](../images/docRender/docRenderHighLevelDesign.png)
+
+## Sequence Diagram 
+![Sequence Diagram](../images/docRender/docRenderSequenceDiagram.png)
+
+The sequence of events depends on 2 things:
+
+- What type of document are you generating i.e. HTML or PDF
+- Do you want the generated document to be returned or stored in S3?
+
+The above sequence diagram shows 3 potential exit points:
+
+- Generate a HTML document and return it
+- Generate a PDF document and return it
+- Generate a HTML / PDF document and store it in S3
+
+## Additional links
+
+[Draw.io source](../images/docRender/docRender.drawio)
+
