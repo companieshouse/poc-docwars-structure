@@ -1,4 +1,5 @@
-# Technical Documentation
+# POC-docwars-structure
+A proof of concept for centralized Companies House technical documentation created from the docWars meetings
 
 template documentation can be found [here](https://tdt-documentation.london.cloudapps.digital/#technical-documentation-template)
 
@@ -25,43 +26,6 @@ Run the following in the command line to install Middleman:
 gem install middleman
 ```
 
-### Preview website
-To preview or build the website, we need to use the terminal.
-
-In the application folder type the following to install the required gems:
-
-```
-bundle install
-```
-
-## Making changes
-
-To make changes edit the source files in the `source` folder.
-
-### Single page output
-
-Although a single page of HTML is generated the markdown is spread across
-multiple files to make it easier to manage. They can be found in
-`source/documentation`.
-
-A new markdown file isn't automatically included in the generated output. If we
-add a new markdown file at the location `source/documentation/agile/scrum.md`,
-the following snippet in `source/index.html.md.erb`, includes it in the
-generated output.
-
-```
-<%= partial 'documentation/agile/scrum' %>
-```
-
-Including files manually like this lets us specify the position they appear in
-the page.
-
-### Multiple pages
-
-To add a completely new page, create a file with a `.html.md` extension in the `/source` directory.
-
-For example, `source/about.html.md` will be accessible on <http://localhost:4567/about.html>.
-
 ## Preview
 
 Whilst writing documentation we can run a middleman server to preview how the
@@ -87,3 +51,25 @@ If all goes well something like the following output will be displayed:
 ```
 
 You should now be able to view a live preview at http://localhost:4567.
+
+## Observations from POC
+### Concerns
+1. Storage of images (takes up space in git repo)
+2. Storage of attachments (such as draw.io information for reproducibility)
+3. No ability to write comments or like (likes arent widelty used in confluence)
+
+### Aditional notes
+1. Gone through the effort of copying confluence styling as close as I can. 
+2. does a tool for exporting confluence pages to MD exist?
+
+
+## More information
+
+*This is internal to companies house*
+
+- Join the `#fix_docs_in_small_steps` slack channel for more information
+- Checkout our [confluence page](https://companieshouse.atlassian.net/wiki/spaces/DEV/pages/1729003595/Fix+our+Docs+Overview)
+
+
+
+
