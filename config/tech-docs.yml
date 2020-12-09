@@ -5,13 +5,12 @@ host: hmcts.github.io
 show_govuk_logo: true
 service_name: Companies House
 service_link: https://github.com/ch
-phase: Beta
+phase: Alpha
 
 # Links to show on right-hand-side of header
 header_links:
-  Support: https://hmcts-reform.slack.com/app_redirect?channel=rpe
   Documentation: /
-  GitHub: https://github.com/hmcts
+  GitHub: https://github.com/companieshouse
 
 # Enables search functionality. This indexes pages only and is not recommended for single-page sites.
 enable_search: true
@@ -34,5 +33,5 @@ max_toc_heading_level: 1
 prevent_indexing: false
 
 show_contribution_banner: true
-github_repo: hmcts/hmcts.github.io
+github_repo: companieshouse/poc-docwars-structure
 github_branch: source

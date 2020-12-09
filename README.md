@@ -1,11 +1,32 @@
 # Technical Documentation
 
+template documentation can be found [here](https://tdt-documentation.london.cloudapps.digital/#technical-documentation-template)
+
 ## Getting started
 
-To preview or build the website, we need to use the terminal.
+### Install Ruby
+You can install Ruby to any location on your local machine.
 
-Install Ruby with Rubygems, perferably with a [Ruby version manager][rvm],
-and the [Bundler gem][bundler].
+You can install Ruby in multiple ways, for example using Ruby Version Manager (RVM) or rbenv. These instructions assume you are using RVM.
+
+1. Run the following in the command line to install the ruby version manager:
+```
+\curl -sSL https://get.rvm.io | bash -s stable --ruby
+```
+2. Check the Ruby downloads page for the latest version of Ruby.
+
+3. Run `rvm install ruby-x.x.x` to install the latest version of Ruby.
+
+### Install Middleman
+You can install Middleman to any location on your local machine.
+
+Run the following in the command line to install Middleman:
+```
+gem install middleman
+```
+
+### Preview website
+To preview or build the website, we need to use the terminal.
 
 In the application folder type the following to install the required gems:
 
@@ -66,27 +87,3 @@ If all goes well something like the following output will be displayed:
 ```
 
 You should now be able to view a live preview at http://localhost:4567.
-
-## Build
-
-If you want to publish the website without using a build script you may need to
-build the static HTML files.
-
-Type the following to build the HTML:
-
-```
-bundle exec middleman build
-```
-
-This will create a `build` subfolder in the application folder which contains
-the HTML and asset files ready to be published.
-
-[rvm]: https://www.ruby-lang.org/en/documentation/installation/#managers
-[bundler]: http://bundler.io/
-
-## Publishing
-
-Run:
-```
-bundle exec rake publish
-```
