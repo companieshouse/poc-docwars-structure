@@ -52,17 +52,6 @@ If all goes well something like the following output will be displayed:
 
 You should now be able to view a live preview at http://localhost:4567.
 
-## Observations from POC
-### Concerns
-1. Storage of images (takes up space in git repo)
-2. Storage of attachments (such as draw.io information for reproducibility)
-3. No ability to write comments or like (likes arent widelty used in confluence)
-
-### Aditional notes
-1. Gone through the effort of copying confluence styling as close as I can. 
-2. does a tool for exporting confluence pages to MD exist?
-
-
 ## More information
 
 *This is internal to companies house*
