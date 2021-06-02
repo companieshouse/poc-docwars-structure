@@ -4,20 +4,39 @@ A proof of concept for centralized Companies House technical documentation creat
 template documentation can be found [here](https://tdt-documentation.london.cloudapps.digital/#technical-documentation-template)
 
 ## Getting started
-
+### Install node.js
+node.js is required
 ### Install Ruby
 You can install Ruby to any location on your local machine.
 
-You can install Ruby in multiple ways, for example using Ruby Version Manager (RVM) or rbenv. These instructions assume you are using RVM.
+You can install Ruby in multiple ways, for example using Ruby Version Manager (RVM) or rbenv. 
 
-1. Run the following in the command line to install the ruby version manager:
+However, these instructions assume you are using chruby instead of RVM or rbenv.
+
+To install chruby and ruby-install run the following:
 ```
-\curl -sSL https://get.rvm.io | bash -s stable --ruby
+brew install chruby ruby-install
+```    
+Add this to bash_profile 
+
+"source /usr/local/share/chruby/chruby.sh"
+
+Install ruby you will need to specify which version (in this example I installed ruby-2.7.2)
 ```
-2. Check the Ruby downloads page for the latest version of Ruby.
-
-3. Run `rvm install ruby-x.x.x` to install the latest version of Ruby.
-
+ruby-install ruby 2.7.2
+```    
+If you get openssl errors during the install then find where your openssl is install and use the with-openssl-dir attribute. 
+```
+ruby-install ruby 2.7.2 —- --with-openssl-dir=/usr/local/Cellar/openssl@1.1/1.1.1d/
+ ```   
+Switch to the newly installed version of ruby by running the following
+```
+chruby ruby-2.7.2
+```
+To ensure you have all the relevant dependencies run the following
+```
+gem install bundler
+```
 ### Install Middleman
 You can install Middleman to any location on your local machine.
 
@@ -35,7 +54,7 @@ the browser will automatically refresh.
 The preview is only available on our own computer. Others won't be able to
 access it if they are given the link.
 
-Type the following to start the server:
+Navigate to the root directory of this project and then type the following to start the server:
 
 ```
 bundle exec middleman server
